@@ -5,6 +5,7 @@ from day_2_password_philosophy import day_2_task_1, day_2_task_2
 from day_3_toboggan_trajectory import day_3_task_1, day_3_task_2
 from day_4_passport_processing import day_4_task_1, day_4_task_2
 from day_5_binary_boarding import day_5_task_1, day_5_task_2
+from day_6_custom_customs import day_6_task_1, day_6_task_2
 
 
 def print_help():
@@ -38,6 +39,8 @@ if __name__ == '__main__':
 	for d in days:
 		for t in tasks:
 			try:
+				print('Day', d, 'task', t, '- ', end='')
 				locals()['day_{}_task_{}'.format(d, t)]()
 			except:
-				break
+				print('Solution does not exist yet!')
+				exit(0)
