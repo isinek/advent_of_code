@@ -6,6 +6,7 @@ from day_3_toboggan_trajectory import day_3_task_1, day_3_task_2
 from day_4_passport_processing import day_4_task_1, day_4_task_2
 from day_5_binary_boarding import day_5_task_1, day_5_task_2
 from day_6_custom_customs import day_6_task_1, day_6_task_2
+from day_7_handy_haversacks import day_7_task_1, day_7_task_2
 
 
 def print_help():
