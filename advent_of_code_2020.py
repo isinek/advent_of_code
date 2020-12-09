@@ -7,6 +7,8 @@ from day_4_passport_processing import day_4_task_1, day_4_task_2
 from day_5_binary_boarding import day_5_task_1, day_5_task_2
 from day_6_custom_customs import day_6_task_1, day_6_task_2
 from day_7_handy_haversacks import day_7_task_1, day_7_task_2
+from day_8_handheld_halting import day_8_task_1, day_8_task_2
+from day_9_encoding_error import day_9_task_1, day_9_task_2
 
 
 def print_help():
