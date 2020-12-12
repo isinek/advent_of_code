@@ -11,6 +11,7 @@ from day_8_handheld_halting import day_8_task_1, day_8_task_2
 from day_9_encoding_error import day_9_task_1, day_9_task_2
 from day_10_adapter_array import day_10_task_1, day_10_task_2
 from day_11_seating_system import day_11_task_1, day_11_task_2
+from day_12_rain_risk import day_12_task_1, day_12_task_2
 
 
 def print_help():
