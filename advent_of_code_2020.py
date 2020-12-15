@@ -14,6 +14,7 @@ from day_11_seating_system import day_11_task_1, day_11_task_2
 from day_12_rain_risk import day_12_task_1, day_12_task_2
 from day_13_shuttle_search import day_13_task_1, day_13_task_2
 from day_14_docking_data import day_14_task_1, day_14_task_2
+from day_15_rambunctious_recitation import day_15_task_1, day_15_task_2
 
 
 def print_help():
