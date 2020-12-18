@@ -17,6 +17,7 @@ from day_14_docking_data import day_14_task_1, day_14_task_2
 from day_15_rambunctious_recitation import day_15_task_1, day_15_task_2
 from day_16_ticket_translation import day_16_task_1, day_16_task_2
 from day_17_conway_cubes import day_17_task_1, day_17_task_2
+from day_18_operation_order import day_18_task_1, day_18_task_2
 
 
 def print_help():
