@@ -18,6 +18,13 @@ from day_15_rambunctious_recitation import day_15_task_1, day_15_task_2
 from day_16_ticket_translation import day_16_task_1, day_16_task_2
 from day_17_conway_cubes import day_17_task_1, day_17_task_2
 from day_18_operation_order import day_18_task_1, day_18_task_2
+from day_19_monster_messages import day_19_task_1, day_19_task_2
+from day_20_jurassic_jigsaw import day_20_task_1, day_20_task_2
+from day_21_allergen_assessment import day_21_task_1, day_21_task_2
+from day_22_crab_combat import day_22_task_1, day_22_task_2
+from day_23_crab_cups import day_23_task_1, day_23_task_2
+from day_24_lobby_layout import day_24_task_1, day_24_task_2
+from day_25_combo_braker import day_25_task_1
 
 
 def print_help():
@@ -54,5 +61,5 @@ if __name__ == '__main__':
 				print('Day', d, 'task', t, '- ', end='')
 				locals()['day_{}_task_{}'.format(d, t)]()
 			except:
-				print('Solution does not exist yet!')
+				print('Solution does not exist!')
 				exit(0)
