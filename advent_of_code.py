@@ -1,6 +1,7 @@
 from sys import argv
 
 from day_1_sonar_sweep import day_1_task_1, day_1_task_2
+from day_2_dive import day_2_task_1, day_2_task_2
 
 
 def print_help():

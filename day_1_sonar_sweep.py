@@ -59,7 +59,6 @@ In this example, there are 7 measurements that are larger than the previous
 measurement.
 
 How many measurements are larger than the previous measurement?
-
 '''
 def day_1_task_1():
 	nums = []
@@ -70,6 +69,7 @@ def day_1_task_1():
 			if len(nums) > 1 and nums[-1] > nums[-2]:
 				inc += 1
 		print(inc)
+
 
 '''
 --- Part Two ---
@@ -125,6 +125,7 @@ def day_1_task_2():
 				inc += 1
 			prev_sum = sum(nums[-3:])
 		print(inc)
+
 
 if __name__ == '__main__':
 	day_1_task_1()

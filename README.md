@@ -10,4 +10,5 @@ Nor do you need a fancy computer; every problem has a solution that completes in
 
 <pre>
 <a href="https://adventofcode.com/2021/day/1">                      ~   ~  ~ ~~ ~~~~~~~~~~~~~~~   1 **</a>
+<a href="https://adventofcode.com/2021/day/2">                                    ' .    ..''''   2 **</a>
 </pre>
