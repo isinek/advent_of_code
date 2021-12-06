@@ -5,6 +5,7 @@ from day_2_dive import day_2_task_1, day_2_task_2
 from day_3_binary_diagnostic import day_3_task_1, day_3_task_2
 from day_4_giant_squid import day_4_task_1, day_4_task_2
 from day_5_hydrothermal_venture import day_5_task_1, day_5_task_2
+from day_6_lanternfish import day_6_task_1, day_6_task_2
 
 
 def print_help():
