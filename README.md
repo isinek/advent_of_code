@@ -10,9 +10,10 @@ Nor do you need a fancy computer; every problem has a solution that completes in
 
 <pre>
 <a href="https://adventofcode.com/2021/day/1">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   1 **</a>
-<a href="https://adventofcode.com/2021/day/2"> . .              '  . '     .   .   .     ..''''   2 **</a>
-<a href="https://adventofcode.com/2021/day/3"> ..  ..    . '     . '  . .     .   . .   :         3 **</a>
-<a href="https://adventofcode.com/2021/day/4">  ~       .                  .. .'  . ....'         4 **</a>
-<a href="https://adventofcode.com/2021/day/5">  .           ...      .      ..|\..''              5 **</a>
-<a href="https://adventofcode.com/2021/day/6">     .    '     ...  .   .   :                      6 **</a>
+<a href="https://adventofcode.com/2021/day/2">       ..  '            . .      .  ..     ..''''   2 **</a>
+<a href="https://adventofcode.com/2021/day/3">. ..  ~..            ..  .      .  .      :         3 **</a>
+<a href="https://adventofcode.com/2021/day/4">     ~  .                 ..    .'  ' ....'         4 **</a>
+<a href="https://adventofcode.com/2021/day/5">          ..    '     . ..  . ..|\..''              5 **</a>
+<a href="https://adventofcode.com/2021/day/6">.  '.  ~          '  '   .   :                      6 **</a>
+<a href="https://adventofcode.com/2021/day/7">   .. '     . '  .  .  ..  :'                       7 **</a>
 </pre>
