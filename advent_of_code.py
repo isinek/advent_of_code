@@ -7,6 +7,7 @@ from day_4_giant_squid import day_4_task_1, day_4_task_2
 from day_5_hydrothermal_venture import day_5_task_1, day_5_task_2
 from day_6_lanternfish import day_6_task_1, day_6_task_2
 from day_7_the_treachery_of_whales import day_7_task_1, day_7_task_2
+from day_8_seven_segment_search import day_8_task_1, day_8_task_2
 
 
 def print_help():
