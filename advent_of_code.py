@@ -10,6 +10,7 @@ from day_7_the_treachery_of_whales import day_7_task_1, day_7_task_2
 from day_8_seven_segment_search import day_8_task_1, day_8_task_2
 from day_9_smoke_basin import day_9_task_1, day_9_task_2
 from day_10_syntax_scoring import day_10_task_1, day_10_task_2
+from day_11_dumbo_octopus import day_11_task_1, day_11_task_2
 
 
 def print_help():
