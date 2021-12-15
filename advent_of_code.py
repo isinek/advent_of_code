@@ -11,6 +11,10 @@ from day_8_seven_segment_search import day_8_task_1, day_8_task_2
 from day_9_smoke_basin import day_9_task_1, day_9_task_2
 from day_10_syntax_scoring import day_10_task_1, day_10_task_2
 from day_11_dumbo_octopus import day_11_task_1, day_11_task_2
+from day_12_passage_pathing import day_12_task_1, day_12_task_2
+from day_13_transparent_origami import day_13_task_1, day_13_task_2
+from day_14_extended_polymerization import day_14_task_1, day_14_task_2
+from day_15_chiton import day_15_task_1, day_15_task_2
 
 
 def print_help():
