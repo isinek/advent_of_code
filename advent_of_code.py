@@ -15,6 +15,7 @@ from day_12_passage_pathing import day_12_task_1, day_12_task_2
 from day_13_transparent_origami import day_13_task_1, day_13_task_2
 from day_14_extended_polymerization import day_14_task_1, day_14_task_2
 from day_15_chiton import day_15_task_1, day_15_task_2
+from day_16_packet_decoder import day_16_task_1, day_16_task_2
 
 
 def print_help():
