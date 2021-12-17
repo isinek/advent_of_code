@@ -10,19 +10,20 @@ Nor do you need a fancy computer; every problem has a solution that completes in
 
 <pre>
 <a href="https://adventofcode.com/2021/day/1">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   1 **</a>
-<a href="https://adventofcode.com/2021/day/2">.    '.  .        . .'  .        .   .. .  ..''''   2 **</a>
-<a href="https://adventofcode.com/2021/day/3">    '   .  .     '     .      . .   .     :         3 **</a>
-<a href="https://adventofcode.com/2021/day/4">  .  '                 .        .' ~. ....'         4 **</a>
-<a href="https://adventofcode.com/2021/day/5">  .  .   ~        .   .. .''  ..|\..''              5 **</a>
-<a href="https://adventofcode.com/2021/day/6">    .      ~   .  ''  . .    :                      6 **</a>
-<a href="https://adventofcode.com/2021/day/7">'. .                .   .  :'                       7 **</a>
-<a href="https://adventofcode.com/2021/day/8">  .    .       .            '''''.....  ....        8 **</a>
-<a href="https://adventofcode.com/2021/day/9">.   .' .  .             . :'..  ..    ''    ':      9 **</a>
-<a href="https://adventofcode.com/2021/day/10">..   ~           ..       :   ''  ''''..     '.    10 **</a>
-<a href="https://adventofcode.com/2021/day/11">   . ..'        .  .      :             '..'. :    11 **</a>
-<a href="https://adventofcode.com/2021/day/12">..          '     .  .   :       :'''..   ..' :    12 **</a>
-<a href="https://adventofcode.com/2021/day/13">   .  . '   .   ..     .'    ..''      ''' ...:    13 **</a>
-<a href="https://adventofcode.com/2021/day/14">    .       .   '     : ...''  ..':   ....'        14 **</a>
-<a href="https://adventofcode.com/2021/day/15">'      '    ..    .   :' ...'''    '''             15 **</a>
-<a href="https://adventofcode.com/2021/day/16">'.'.      . '   :'. ....'                          16 **</a>
+<a href="https://adventofcode.com/2021/day/2">'    .             . .  .     '  .     .   ..''''   2 **</a>
+<a href="https://adventofcode.com/2021/day/3">   .    ..      . . . .      .~ . ~   .   :         3 **</a>
+<a href="https://adventofcode.com/2021/day/4">      '      . . .. .   .. .    .'    ....'         4 **</a>
+<a href="https://adventofcode.com/2021/day/5">          .     .             ..|\..''              5 **</a>
+<a href="https://adventofcode.com/2021/day/6">.  '   .     . .     .    .. :                      6 **</a>
+<a href="https://adventofcode.com/2021/day/7">  .         .    .      .  :'                       7 **</a>
+<a href="https://adventofcode.com/2021/day/8">       '. .       '         '''''.....  ....        8 **</a>
+<a href="https://adventofcode.com/2021/day/9">          .  .   .   .  . :'..  ..    ''    ':      9 **</a>
+<a href="https://adventofcode.com/2021/day/10">.       .     '      ..   :   ''  ''''..     '.    10 **</a>
+<a href="https://adventofcode.com/2021/day/11"> .         '              :             '..'. :    11 **</a>
+<a href="https://adventofcode.com/2021/day/12">  .                ..    :       :'''..   ..' :    12 **</a>
+<a href="https://adventofcode.com/2021/day/13">  '.    '    ' '  .    .'    ..''      ''' ...:    13 **</a>
+<a href="https://adventofcode.com/2021/day/14"> . .    .  .. .'.     : ...''  ..':   ....'        14 **</a>
+<a href="https://adventofcode.com/2021/day/15"> ..            .   .' :' ...'''    '''             15 **</a>
+<a href="https://adventofcode.com/2021/day/16">'.'.    .       :'. ....'                          16 **</a>
+<a href="https://adventofcode.com/2021/day/17">   :      . .'  :  '                               17 **</a>
 </pre>
