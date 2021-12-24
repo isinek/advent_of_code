@@ -17,6 +17,13 @@ from day_14_extended_polymerization import day_14_task_1, day_14_task_2
 from day_15_chiton import day_15_task_1, day_15_task_2
 from day_16_packet_decoder import day_16_task_1, day_16_task_2
 from day_17_trick_shot import day_17_task_1, day_17_task_2
+from day_18_snailfish import day_18_task_1, day_18_task_2
+from day_19_beacon_scanner import day_19_task_1, day_19_task_2
+from day_20_trench_map import day_20_task_1, day_20_task_2
+from day_21_dirac_dice import day_21_task_1, day_21_task_2
+from day_22_reactor_reboot import day_22_task_1, day_22_task_2
+from day_23_amphipod import day_23_task_1, day_23_task_2
+from day_24_arithmetic_logic_unit import day_24_task_1, day_24_task_2
 
 
 def print_help():
