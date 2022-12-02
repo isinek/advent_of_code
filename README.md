@@ -32,6 +32,6 @@ Nor do you need a fancy computer; every problem has a solution that completes in
 <a href="https://adventofcode.com/2022/day/5">#@#@@@@@#@@@#@@@@@@@#@@@#@#@###@#@@@@#@#@@@##@@##   5</a>
 <a href="https://adventofcode.com/2022/day/4">@@##@@@@@@@@@@@@@@#@@##@@@@@#@##@@@##@@@#@####@@#   4</a>
 <a href="https://adventofcode.com/2022/day/3">@@@@#@@#@@@@@##@@@@@@@@#@@##@#@####@#@@@@#@#@#@@#   3</a>
-<a href="https://adventofcode.com/2022/day/2">#@@@@@#@@@@@@#@#@#@#@@@@@@@@##@@@##@#@#@@@@@@@@#@   2</a>
+<a href="https://adventofcode.com/2022/day/2">-~------'    ~    ~ '--~-----~-~----___________--   2 **</a>
 <a href="https://adventofcode.com/2022/day/1">  ~    ~  ~      ~     ~ ~   ~     ~  ~  ~   ~      1 **</a>
 </pre>
