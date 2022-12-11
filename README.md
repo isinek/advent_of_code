@@ -23,7 +23,7 @@ Nor do you need a fancy computer; every problem has a solution that completes in
 <a href="https://adventofcode.com/2022/day/14">##@@#@@@#|@@#@#@##@@@##@@@@#@@@##@@@@@@@@#@@@#@@@  14</a>
 <a href="https://adventofcode.com/2022/day/13">#@@@#@@@@@#@@@@#@@@@@@@@@@#@@@#@@#@@@@@@#@@#@@#@@  13</a>
 <a href="https://adventofcode.com/2022/day/12">@@@@#@###@@@@##@#@@@@#@#@@#@@@@@#@#@#@@#@#@####@@  12</a>
-<a href="https://adventofcode.com/2022/day/11">@@@@@#@@##@@##@@@@@@#@@@@@@@@@@@@@@@@#@@#@@@@@@@@  11</a>
+<a href="https://adventofcode.com/2022/day/11">@@#@@@###@@@.~~.@@@###@@@@@@@#@@@@@#@@@@@@@#@#@@@  11 **</a>
 <a href="https://adventofcode.com/2022/day/10">@@@@@@@#@@@.~~.#@@@@@#@@#@@#@@@@##@@@@@@@@@##@@##  10 **</a>
 <a href="https://adventofcode.com/2022/day/9">@@@#.#@ _|%%%=%%|_ #@@@@@#@#@@##@@@#@#@@@@#@@#@@#   9 **</a>
 <a href="https://adventofcode.com/2022/day/8">###@@../  \.~~./  \.....@@@@@@@@@@@@@@#@@#@##@@@#   8 **</a>
