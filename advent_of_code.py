@@ -1,6 +1,7 @@
 from sys import argv
 
 # from day_N_TASK_NAME import day_N_task_1, day_N_task_2
+from day_1_trebuchet import day_1_task_1, day_1_task_2
 
 
 def print_help():
