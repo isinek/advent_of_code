@@ -11,6 +11,9 @@ class Program
 			case 1:
 				solver = new SolverDay1();
 				break;
+			case 2:
+				solver = new SolverDay2();
+				break;
 			default:
 				Console.WriteLine($"Solver for day {day} is not implemented!");
 				return;
@@ -19,11 +22,11 @@ class Program
 		string[] lines = File.ReadLines(fileInfo.FullName).ToArray();
 		if ((part & 1) > 0 || part == 0) {
 			ulong result = solver.Part1(lines);
-			Console.WriteLine($"Solver for \"{solver.Title}\" (day {solver.Day}) part 1 returned: {result}");
+			Console.WriteLine($"Solver for -- Day {solver.Day} - {solver.Title} --  part 1 returned: {result}");
 		}
 		if ((part & 2) > 0 || part == 0) {
 			ulong result = solver.Part2(lines);
-			Console.WriteLine($"Solver for \"{solver.Title}\" (day {solver.Day}) part 2 returned: {result}");
+			Console.WriteLine($"Solver for -- Day {solver.Day} - {solver.Title} --  part 2 returned: {result}");
 		}
 	}
 
