@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode2023.Solvers;
 
-enum CamelCardsHandType {
+public enum CamelCardsHandType {
 	None,
 	HighCard,
 	OnePair,
@@ -11,7 +11,7 @@ enum CamelCardsHandType {
 	FiveOfKind
 };
 
-class CamelCardsHand : IComparable<CamelCardsHand>
+public class CamelCardsHand : IComparable<CamelCardsHand>
 {
 	public static Dictionary<char, byte> CardValues = new Dictionary<char, byte> {
 		{ 'A', 14 },
@@ -42,15 +42,19 @@ class CamelCardsHand : IComparable<CamelCardsHand>
 			++cardPoints[CamelCardsHand.CardValues[c]];
 
 		uint[] nCards = new uint[4]; 
+		CamelCardsHandType type = CamelCardsHandType.HighCard;
 		for(uint i = 2; i < 15; ++i) {
-			if (cardPoints[i] == 5)
-				return CamelCardsHandType.FiveOfKind;
-			else if (cardPoints[i] == 4)
-				return CamelCardsHandType.FourOfKind;
+			if (cardPoints[i] == 5) {
+				type = CamelCardsHandType.FiveOfKind;
+				break;
+			}
+			else if (cardPoints[i] == 4) {
+				type = CamelCardsHandType.FourOfKind;
+				break;
+			}
 			++nCards[cardPoints[i]];
 		}
 
-		CamelCardsHandType type = CamelCardsHandType.HighCard;
 		if (nCards[3] > 0)
 			type = CamelCardsHandType.ThreeOfKind;
 		if (nCards[2] > 0 && type == CamelCardsHandType.ThreeOfKind)
@@ -59,7 +63,6 @@ class CamelCardsHand : IComparable<CamelCardsHand>
 			type = CamelCardsHandType.TwoPairs;
 		else if (nCards[2] == 1)
 			type = CamelCardsHandType.OnePair;
-		Console.Write($"{this.Cards} {type} ");
 
 		switch(cardPoints[1]) {
 			case 5:
@@ -109,7 +112,6 @@ class CamelCardsHand : IComparable<CamelCardsHand>
 				}
 				break;
 		}
-		Console.WriteLine($"{type}");
 
 		return type;
 	}
