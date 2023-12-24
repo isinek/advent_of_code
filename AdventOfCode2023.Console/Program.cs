@@ -26,6 +26,9 @@ class Program
 			case 6:
 				solver = new SolverDay6();
 				break;
+			case 7:
+				solver = new SolverDay7();
+				break;
 			default:
 				Console.WriteLine($"Solver for day {day} is not implemented!");
 				return;
