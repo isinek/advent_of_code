@@ -32,6 +32,9 @@ class Program
 			case 8:
 				solver = new SolverDay8();
 				break;
+			case 9:
+				solver = new SolverDay9();
+				break;
 			default:
 				Console.WriteLine($"Solver for day {day} is not implemented!");
 				return;
