@@ -73,19 +73,28 @@
 # Your actual left and right lists contain many location IDs. What is the total
 # distance between your lists?
 
-input_file="$1"
+function main() {
+  local input_file="$1"
 
-declare -i l_column=($( awk '{ print $1 }' ${input_file} | sort -n ))
-declare -i r_column=($( awk '{ print $2 }' ${input_file} | sort -n ))
+  local -i l_column=($( awk '{ print $1 }' ${input_file} | sort -n ))
+  local -i r_column=($( awk '{ print $2 }' ${input_file} | sort -n ))
 
-sum=0
-for i in $( seq 0 $(( ${#l_column[*]} - 1 )) ); do
-  d=$(( ${l_column[${i}]} - ${r_column[${i}]} ))
-  if [ ${d} -lt 0 ]; then
-    sum=$(( sum - ${d} ))
-  else
-    sum=$(( sum + ${d} ))
-  fi
-done
+  local sum=0
+  for i in $( seq 0 $(( ${#l_column[*]} - 1 )) ); do
+    local d=$(( ${l_column[${i}]} - ${r_column[${i}]} ))
+    if [ ${d} -lt 0 ]; then
+      sum=$(( sum - ${d} ))
+    else
+      sum=$(( sum + ${d} ))
+    fi
+  done
 
-echo ${sum}
+  echo ${sum}
+}
+
+if [ $# -ne 1 ]; then
+  echo "$0 <task_data.in>"
+  exit 1
+fi
+
+main $1

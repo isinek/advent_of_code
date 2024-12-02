@@ -43,29 +43,38 @@
 # 
 # Once again consider your left and right lists. What is their similarity score?
 
-input_file="$1"
+function main() {
+  local input_file="$1"
 
-declare -A r_column
+  local -A r_column
 
-while read l r; do
-  if [ -z "${l}" ]; then
-    continue;
-  elif [ -z "${r_column[${r}]}" ]; then
-    r_column[${r}]=0
-  fi
+  while read l r; do
+    if [ -z "${l}" ]; then
+      continue;
+    elif [ -z "${r_column[${r}]}" ]; then
+      r_column[${r}]=0
+    fi
 
-  r_column[${r}]=$(( ${r_column[${r}]} + 1 ))
-done < ${input_file}
+    r_column[${r}]=$(( ${r_column[${r}]} + 1 ))
+  done < ${input_file}
 
-sum=0
-while read l r; do
-  if [ -z "${l}" ]; then
-    continue;
-  elif [ -z "${r_column[${l}]}" ]; then
-    continue
-  fi
+  local sum=0
+  while read l r; do
+    if [ -z "${l}" ]; then
+      continue;
+    elif [ -z "${r_column[${l}]}" ]; then
+      continue
+    fi
 
-  sum=$(( sum + ${l}*${r_column[${l}]} ))
-done < ${input_file}
+    sum=$(( sum + ${l}*${r_column[${l}]} ))
+  done < ${input_file}
 
-echo ${sum}
+  echo ${sum}
+}
+
+if [ $# -ne 1 ]; then
+  echo "$0 <task_data.in>"
+  exit 1
+fi
+
+main $1
