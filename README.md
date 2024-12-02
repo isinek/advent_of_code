@@ -10,4 +10,28 @@ Nor do you need a fancy computer; every problem has a solution that completes in
 
 <pre>
 <a href="https://adventofcode.com/2024/day/1">       .--'~ ~ ~|        .-' *       \  /     '-.   1 **</a>
+<a href="https://adventofcode.com/2024/day/2">    .--'~  ,* ~ |        |  &gt;o&lt;   \_\_\|_/__/   |   2 **</a>
+.---'           |        |                      |   3
+                                                    4
+                                                    5
+                                                    6
+                                                    7
+                                                    8
+                                                    9
+                                                   10
+                                                   11
+                                                   12
+                                                   13
+                                                   14
+                                                   15
+                                                   16
+                                                   17
+                                                   18
+                                                   19
+                                                   20
+                                                   21
+                                                   22
+                                                   23
+                                                   24
+                                                   25
 </pre>
