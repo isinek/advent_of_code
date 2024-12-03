@@ -11,8 +11,8 @@ Nor do you need a fancy computer; every problem has a solution that completes in
 <pre>
 <a href="https://adventofcode.com/2024/day/1">       .--'~ ~ ~|        .-' *       \  /     '-.   1 **</a>
 <a href="https://adventofcode.com/2024/day/2">    .--'~  ,* ~ |        |  &gt;o&lt;   \_\_\|_/__/   |   2 **</a>
-.---'           |        |                      |   3
-                                                    4
+<a href="https://adventofcode.com/2024/day/3">.---': ~ '(~), ~|        | &gt;@&gt;O&lt; o-_/.()__------|   3 **</a>
+|               |        |                      |   4
                                                     5
                                                     6
                                                     7
