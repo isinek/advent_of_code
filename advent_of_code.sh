@@ -25,6 +25,8 @@ declare -i days=( $( seq 1 25 ) )
 declare -i tasks=( 1 2 )
 declare -A input_files=(
   ["1_1"]=day1.in ["1_2"]=day1.in
+  ["2_1"]=day2.in ["2_2"]=day2.in
+  ["3_1"]=day3.in ["3_2"]=day3.in
 )
 
 while getopts 'd:t:' arg; do
@@ -36,7 +38,9 @@ done
 
 for d in ${days[*]}; do
   for t in ${tasks[*]}; do
-    if [ ! -r day${d}_task${t}.sh ]; then
+    if [ -z "${input_files[${d}_${t}]}" ]; then
+      continue
+    elif [ ! -r day${d}_task${t}.sh ]; then
       echo "Solution for day ${d} and task ${t} does not exist!"
       exit 2
     elif [ ! -r "${input_files[${d}_${t}]}" ]; then
