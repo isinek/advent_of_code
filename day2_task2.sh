@@ -25,8 +25,11 @@
 
 function is_safe() {
   local problem_dampener=$1
-  local levels=( ${@:2} )
-  local increase=$(( ${levels[0]} < ${levels[1]} ))
+  local -i levels
+  local increase
+
+  mapfile -d " " levels < <( echo "${@:2}" )
+  increase=$(( levels[0] < levels[1] ))
 
   for i in $( seq 0 $(( ${#levels[@]} - 2 )) ); do
     local curr_diff=$(( ${levels[$(( i + 1 ))]} - ${levels[${i}]} ))
@@ -40,18 +43,18 @@ function is_safe() {
     if (( problem_dampener )); then
       local res=0
       
-      res=$( is_safe 0 ${levels[@]:0:$(( i ))} ${levels[@]:$(( i + 1 ))} )
-      if [ ${res} -eq 0 ]; then
-        res=$( is_safe 0 ${levels[@]:0:$(( i + 1 ))} ${levels[@]:$(( i + 2 ))} )
+      res=$( is_safe 0 "${levels[@]:0:$(( i ))}" "${levels[@]:$(( i + 1 ))}" )
+      if [ "${res}" -eq 0 ]; then
+        res=$( is_safe 0 "${levels[@]:0:$(( i + 1 ))}" "${levels[@]:$(( i + 2 ))}" )
       fi
-      if [ ${res} -eq 0 ] && [ ${i} -gt 0 ]; then
-        res=$( is_safe 0 ${levels[@]:1} )
+      if [ "${res}" -eq 0 ] && [ "${i}" -gt 0 ]; then
+        res=$( is_safe 0 "${levels[@]:1}" )
       fi
-      if [ ${res} -eq 0 ] && [ ${i} -gt 1 ]; then
-        res=$( is_safe 0 ${levels[0]} ${levels[@]:2} )
+      if [ "${res}" -eq 0 ] && [ "${i}" -gt 1 ]; then
+        res=$( is_safe 0 "${levels[0]}" "${levels[@]:2}" )
       fi
 
-      echo ${res}
+      echo "${res}"
       return
     else
       echo 0
@@ -68,8 +71,8 @@ function main() {
   local sum=0
 
   while read -r line; do
-    sum=$(( sum + $( is_safe 1 ${line} ) ))
-  done < ${input_file}
+    sum=$(( sum + $( is_safe 1 "${line}" ) ))
+  done < "${input_file}"
 
   echo ${sum}
 }
@@ -79,4 +82,4 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-main $1
+main "$1"

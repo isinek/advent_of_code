@@ -29,9 +29,8 @@
 
 function main() {
   local input_file=$1
-  local sum=0
 
-  sed "s=\(do\(n't\)*()\)=\n\1=g" ${input_file} | \
+  sed "s=\(do\(n't\)*()\)=\n\1=g" "${input_file}" | \
     grep -v "^don't()" | \
     grep -Po "mul\(\d{1,3},\d{1,3}\)" | \
     grep -Po "\d{1,3},\d{1,3}" | \
@@ -43,4 +42,4 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-main $1
+main "$1"

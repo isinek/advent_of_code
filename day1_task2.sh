@@ -48,7 +48,7 @@ function main() {
 
   local -A r_column
 
-  while read l r; do
+  while read -r l r; do
     if [ -z "${l}" ]; then
       continue;
     elif [ -z "${r_column[${r}]}" ]; then
@@ -56,18 +56,18 @@ function main() {
     fi
 
     r_column[${r}]=$(( ${r_column[${r}]} + 1 ))
-  done < ${input_file}
+  done < "${input_file}"
 
   local sum=0
-  while read l r; do
+  while read -r l r; do
     if [ -z "${l}" ]; then
       continue;
     elif [ -z "${r_column[${l}]}" ]; then
       continue
     fi
 
-    sum=$(( sum + ${l}*${r_column[${l}]} ))
-  done < ${input_file}
+    sum=$(( sum + l*${r_column[${l}]} ))
+  done < "${input_file}"
 
   echo ${sum}
 }
@@ -77,4 +77,4 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-main $1
+main "$1"

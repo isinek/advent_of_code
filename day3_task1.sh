@@ -33,9 +33,8 @@
 
 function main() {
   local input_file=$1
-  local sum=0
 
-  grep -Po "mul\(\d{1,3},\d{1,3}\)" ${input_file} | \
+  grep -Po "mul\(\d{1,3},\d{1,3}\)" "${input_file}" | \
     grep -Po "\d{1,3},\d{1,3}" | \
     awk -F',' 'BEGIN { s = 0 } { s += $1*$2 } END { print s }'
 }
@@ -45,4 +44,4 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-main $1
+main "$1"

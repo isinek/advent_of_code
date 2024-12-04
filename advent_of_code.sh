@@ -14,14 +14,16 @@
 function print_help() {
   local find_re="^## "
 
-  sed -n "/${find_re}/p" $0 | sed -E "s/${find_re}(.+)/\1/"
+  sed -n "/${find_re}/p" "$0" | sed -E "s/${find_re}(.+)/\1/"
 }
 
 #######################################
 # MAIN
 #######################################
 
-declare -i days=( $( seq 1 25 ) )
+declare -i days
+mapfile days < <( seq 1 25 )
+
 declare -i tasks=( 1 2 )
 declare -A input_files=(
   ["1_1"]=day1.in ["1_2"]=day1.in
@@ -31,16 +33,17 @@ declare -A input_files=(
 
 while getopts 'd:t:' arg; do
   case "${arg}" in
-    d) days=(${OPTARG}) ;;
-    t) tasks=(${OPTARG}) ;;
+    d) days=( "${OPTARG}" ) ;;
+    t) tasks=( "${OPTARG}" ) ;;
+    *) exit 1 ;;
   esac
 done
 
-for d in ${days[*]}; do
-  for t in ${tasks[*]}; do
+for d in "${days[@]}"; do
+  for t in "${tasks[@]}"; do
     if [ -z "${input_files[${d}_${t}]}" ]; then
       continue
-    elif [ ! -r day${d}_task${t}.sh ]; then
+    elif [ ! -r "day${d}_task${t}.sh" ]; then
       echo "Solution for day ${d} and task ${t} does not exist!"
       exit 2
     elif [ ! -r "${input_files[${d}_${t}]}" ]; then
@@ -48,7 +51,7 @@ for d in ${days[*]}; do
       exit 2
     fi
 
-    solution=$( bash day${d}_task${t}.sh ${input_files[${d}_${t}]} )
+    solution=$( bash "day${d}_task${t}.sh" "${input_files[${d}_${t}]}" )
     echo "Day ${d} task ${t} solution: ${solution}"
   done
 done

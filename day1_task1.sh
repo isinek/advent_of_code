@@ -76,16 +76,19 @@
 function main() {
   local input_file="$1"
 
-  local -i l_column=($( awk '{ print $1 }' ${input_file} | sort -n ))
-  local -i r_column=($( awk '{ print $2 }' ${input_file} | sort -n ))
+  local -i l_column
+  local -i r_column
+
+  mapfile l_column < <( awk '{ print $1 }' "${input_file}" | sort -n )
+  mapfile r_column < <( awk '{ print $2 }' "${input_file}" | sort -n )
 
   local sum=0
   for i in $( seq 0 $(( ${#l_column[*]} - 1 )) ); do
     local d=$(( ${l_column[${i}]} - ${r_column[${i}]} ))
     if [ ${d} -lt 0 ]; then
-      sum=$(( sum - ${d} ))
+      sum=$(( sum - d ))
     else
-      sum=$(( sum + ${d} ))
+      sum=$(( sum + d ))
     fi
   done
 
@@ -97,4 +100,4 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-main $1
+main "$1"
