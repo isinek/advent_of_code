@@ -13,10 +13,10 @@ Nor do you need a fancy computer; every problem has a solution that completes in
 <a href="https://adventofcode.com/2024/day/2">    .--'~  ,* ~ |        |  &gt;o&lt;   \_\_\|_/__/   |   2 **</a>
 <a href="https://adventofcode.com/2024/day/3">.---': ~ '(~), ~|        | &gt;@&gt;O&lt; o-_/.()__------|   3 **</a>
 <a href="https://adventofcode.com/2024/day/4">|@..@'. ~ " ' ~ |        |&gt;O&gt;o&lt;@&lt; \____       .'|   4 **</a>
-|               |        |          ..          |   5
-                                                    6
-                                                    7
-                                                    8
+<a href="https://adventofcode.com/2024/day/5">|_.~._@'.. ~ ~ *|        | _| |_    ..\_\_ ..'* |   5 **</a>
+<a href="https://adventofcode.com/2024/day/6">| ||| @@@@'''...|        |...     .'  '.'''../..|   6 **</a>
+<a href="https://adventofcode.com/2024/day/7">|               |        |        |    |        |   7</a>
+|   .--.        |        |        |    |        |   8
                                                     9
                                                    10
                                                    11
