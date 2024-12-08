@@ -32,6 +32,7 @@ declare -A input_files=(
   ["4_1"]=day4.in ["4_2"]=day4.in
   ["5_1"]=day5.in ["5_2"]=day5.in
   ["6_1"]=day6.in ["6_2"]=day6.in
+  ["7_1"]=day7.in ["7_2"]=day7.in
 )
 
 while getopts 'd:t:' arg; do
