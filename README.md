@@ -8,18 +8,17 @@ People use them as a speed contest, interview prep, company training, university
 You don't need a computer science background to participate - just a little programming knowledge and some problem solving skills will get you pretty far.<br />
 Nor do you need a fancy computer; every problem has a solution that completes in at most 15 seconds on ten-year-old hardware.
 
-<pre>
-          .-----.          .------------------.         
+<pre>          .-----.          .------------------.         
 <a href="https://adventofcode.com/2024/day/1">       .--'~ ~ ~|        .-' *       \  /     '-.   1 **</a>
 <a href="https://adventofcode.com/2024/day/2">    .--'~  ,* ~ |        |  &gt;o&lt;   \_\_\|_/__/   |   2 **</a>
 <a href="https://adventofcode.com/2024/day/3">.---': ~ '(~), ~|        | &gt;@&gt;O&lt; o-_/.()__------|   3 **</a>
 <a href="https://adventofcode.com/2024/day/4">|#..@'. ~ " ' ~ |        |&gt;O&gt;o&lt;@&lt; \____       .'|   4 **</a>
 <a href="https://adventofcode.com/2024/day/5">|_.~._@'.. ~ ~ *|        | _| |_    ..\_\_ ..'* |   5 **</a>
-<a href="https://adventofcode.com/2024/day/6">| ||| @ #@'''...|        |...     .'  '.'''../..|   6 **</a>
-<a href="https://adventofcode.com/2024/day/7">|@~~~@#@@@   @  |        |/\ ''.  |    |   -/  :|   7 **</a>
-<a href="https://adventofcode.com/2024/day/8">|   .--.        |        |        |    |        |   8</a>
-'---'  |        |        |        |    |        |   9
-                                                   10
+<a href="https://adventofcode.com/2024/day/6">| ||| @#@@'''...|        |...     .'  '.'''../..|   6 **</a>
+<a href="https://adventofcode.com/2024/day/7">|@~~~#@#@@  @ @ |        |/\ ''.  |    |   -/  :|   7 **</a>
+<a href="https://adventofcode.com/2024/day/8">|~~..--. _____  |        |* /~\ '.|    | - /  .'|   8 **</a>
+<a href="https://adventofcode.com/2024/day/9">'---'  |        |        |        |    |        |   9</a>
+       |        |        |        |    |        |  10
                                                    11
                                                    12
                                                    13
