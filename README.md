@@ -13,22 +13,22 @@ Nor do you need a fancy computer; every problem has a solution that completes in
 <a href="https://adventofcode.com/2024/day/2">    .--'~  ,* ~ |        |  &gt;o&lt;   \_\_\|_/__/   |   2 **</a>
 <a href="https://adventofcode.com/2024/day/3">.---': ~ '(~), ~|        | &gt;@&gt;O&lt; o-_/.()__------|   3 **</a>
 <a href="https://adventofcode.com/2024/day/4">|@..@'. ~ " ' ~ |        |&gt;O&gt;o&lt;@&lt; \____       .'|   4 **</a>
-<a href="https://adventofcode.com/2024/day/5">|_.~._@'.. ~ ~ *|        | _| |_    ..\_\_ ..'* |   5 **</a>
-<a href="https://adventofcode.com/2024/day/6">| ||| # @ '''...|        |...     .'  '.'''../..|   6 **</a>
-<a href="https://adventofcode.com/2024/day/7">|@~~~@@#@@#@   @|        |/\ ''.  |    |   -/  :|   7 **</a>
+<a href="https://adventofcode.com/2024/day/5">|_.~._#'.. ~ ~ *|        | _| |_    ..\_\_ ..'* |   5 **</a>
+<a href="https://adventofcode.com/2024/day/6">| ||| @#@ '''...|        |...     .'  '.'''../..|   6 **</a>
+<a href="https://adventofcode.com/2024/day/7">|@~~~##@# @ @@  |        |/\ ''.  |    |   -/  :|   7 **</a>
 <a href="https://adventofcode.com/2024/day/8">|~~..--. _____  |        |* /~\ '.|    | - /  .'|   8 **</a>
 <a href="https://adventofcode.com/2024/day/9">'---'  ||[][]_\-|        |~/ * \ :|    |  *..'  |   9 **</a>
 <a href="https://adventofcode.com/2024/day/10">       |------- |        |   /\ .'|    |'''~~~~~|  10 **</a>
 <a href="https://adventofcode.com/2024/day/11">       |.......||        |/\ ..'  |    |   .    |  11 **</a>
-<a href="https://adventofcode.com/2024/day/12">       |        |        |        |    |        |  12</a>
+<a href="https://adventofcode.com/2024/day/12">       |  -  -  |        |''':::::|    |  .     |  12 *</a>
 <a href="https://adventofcode.com/2024/day/13">       |        |        |        |    |        |  13</a>
 <a href="https://adventofcode.com/2024/day/14">       |        |        |        |    |        |  14</a>
 <a href="https://adventofcode.com/2024/day/15">       |        |        |        |    |        |  15</a>
 <a href="https://adventofcode.com/2024/day/16">       |        |        |        |    |        |  16</a>
 <a href="https://adventofcode.com/2024/day/17">       |        |        |        |    |        |  17</a>
-       |        |        |        |    |        |  18
-                                                   19
-                                                   20
+<a href="https://adventofcode.com/2024/day/18">       |        |        |        |    |        |  18</a>
+<a href="https://adventofcode.com/2024/day/19">       |        |        |        |    |        |  19</a>
+       |        |        |        '.  .'        |  20
                                                    21
                                                    22
                                                    23
