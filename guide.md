@@ -1,14 +1,14 @@
 # Advent of Code in .NET Guide
 ## Create dotnet Solution File
- * Create new solution file execute: `dotnet new sln --name AdventOfCode2023`
+* Create new solution file execute: `dotnet new sln --name AdventOfCode2023`
 
 ## Create Solvers Project
- * Create a classlib project that will contain classes that will solve problems each day: `dotnet new classlib --name AdventOfCode2023.Solvers`
- * After creating project, it is needed to add it to the solution: `dotnet sln add ./AdventOfCode2023.Solvers/`
+* Create a classlib project that will contain classes that will solve problems each day: `dotnet new classlib --name AdventOfCode2023.Solvers`
+* After creating project, it is needed to add it to the solution: `dotnet sln add ./AdventOfCode2023.Solvers/`
 
 ### Create SolverBase Class
- * Inside of AdventOfCode2023.Solvers project, create a class that will be inherited by other Solver classes: `dotnet new class --name SolverBase`
- * Modify AdventOfCode2023.Solvers/SolverBase.cs
+* Inside of AdventOfCode2023.Solvers project, create a class that will be inherited by other Solver classes: `dotnet new class --name SolverBase`
+* Modify AdventOfCode2023.Solvers/SolverBase.cs
 ```csharp
 namespace AdventOfCode2023.Solvers;
 
@@ -37,13 +37,13 @@ public class SolverBase
 ```
 
 ## Create Tests Project
- * Create a nunit project using: `dotnet new nunit --name AdventOfCode2023.Tests`
- * Add it to the solution: `dotnet sln add ./AdventOfCode2023.Tests/`
+* Create a nunit project using: `dotnet new nunit --name AdventOfCode2023.Tests`
+* Add it to the solution: `dotnet sln add ./AdventOfCode2023.Tests/`
 
 ## Solve Day 1 Problem
 ### Create SolverDay1 Class
- * Inside of AdventOfCode2023.Solvers project, create a class that will contain solutions for the first day: `dotnet new class --name SolverDay1`
- * All solvers should inherit SolverBase class
+* Inside of AdventOfCode2023.Solvers project, create a class that will contain solutions for the first day: `dotnet new class --name SolverDay1`
+* All solvers should inherit SolverBase class
 ```csharp
 namespace AdventOfCode2023.Solvers;
 
@@ -56,9 +56,9 @@ public class SolverDay1 : SolverBase
 ```
 
 ### Create TestDay1 Class
- * Inside of AdventOfCode2023.Tests project, create a class that will contain tests (examples from problem description) for the first day: `dotnet new nunit-test --name TestDay1 -o ./`
- * To be sure that we will be able to use Solver classes, add a reference to AdventOfCode2023.Solvers: `dotnet add reference ../AdventOfCode2023.Solvers`
- * Test classes will contain examples from problem descriptions
+* Inside of AdventOfCode2023.Tests project, create a class that will contain tests (examples from problem description) for the first day: `dotnet new nunit-test --name TestDay1 -o ./`
+* To be sure that we will be able to use Solver classes, add a reference to AdventOfCode2023.Solvers: `dotnet add reference ../AdventOfCode2023.Solvers`
+* Test classes will contain examples from problem descriptions
 ```csharp
 using AdventOfCode2023.Solvers;
 
@@ -89,7 +89,7 @@ namespace Tests
 ```
 
 ### Solve Day 1 Part 1
- * Modify SolverDay1.cs:
+* Modify SolverDay1.cs:
 ```csharp
 namespace AdventOfCode2023.Solvers;
 
@@ -121,16 +121,16 @@ public class SolverDay1 : SolverBase
 	}
 }
 ```
- * To test this solution, build the whole solution: `dotnet build`
- * Make sure that both Solvers and Tests are built
- * When build succeeded, test the solution: `dotnet test`
- * If all tests pass, you are ready to test solver with console/web app
+* To test this solution, build the whole solution: `dotnet build`
+* Make sure that both Solvers and Tests are built
+* When build succeeded, test the solution: `dotnet test`
+* If all tests pass, you are ready to test solver with console/web app
 
 ### Create Console App
- * Create console app using: `dotnet new console --name AdventOfCode2023.Console`
- * Add it to solution: `dotnet sln add AdventOfCode2023.Console`
- * In AdventOfCode2023.Console add a reference to AdventOfCode2023.Solvers project: `dotnet add reference ../AdventOfCode2023.Solvers`
- * Modify Program.cs:
+* Create console app using: `dotnet new console --name AdventOfCode2023.Console`
+* Add it to solution: `dotnet sln add AdventOfCode2023.Console`
+* In AdventOfCode2023.Console add a reference to AdventOfCode2023.Solvers project: `dotnet add reference ../AdventOfCode2023.Solvers`
+* Modify Program.cs:
 ```csharp
 using System.CommandLine;
 using AdventOfCode2023.Solvers;
@@ -193,7 +193,10 @@ class Program
 	}
 }
 ```
- * Build everything: `dotnet build`
- * Create resources directory and add a file with inputs for the first day
- * Run console app: `dotnet run --project AdventOfCode2023.Console/ --day 1 --part 1 --file ./resources/day1.in`
+* Build everything: `dotnet build`
+* Create resources directory and add a file with inputs for the first day
+* Run console app: `dotnet run --project AdventOfCode2023.Console/ --day 1 --part 1 --file ./resources/day1.in`
 
+## Docker
+* To build docker image: `docker build -t aof2023console .`
+* To run docker image: `docker run aof2023console --day 1 --part 1 --file /resources/day1.in`
